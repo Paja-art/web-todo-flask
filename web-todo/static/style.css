@@ -1,0 +1,14 @@
+body {
+    font-family: Arial;
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+li {
+    margin: 5px 0;
+}

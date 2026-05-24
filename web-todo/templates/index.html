@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<form action="/add" method="POST">
+    <input type="text" name="title" placeholder="Nový úkol">
+    <button type="submit">Přidat</button>
+</form>
+
+<ul>
+    {% for task in tasks %}
+        <li>
+            {{ task }}
+            <a href="/delete/{{ loop.index0 }}">Smazat</a>
+        </li>
+    {% endfor %}
+</ul>
+{% endblock %}
